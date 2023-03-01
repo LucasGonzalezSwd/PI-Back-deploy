@@ -31,10 +31,8 @@ router.get("/", async (req,res,next)=>{
             })
             await Promise.all(dietsP)
             const allDietsDb = await Diet.findAll()
-            console.log("aaaaaaa");
             return res.json(allDietsDb)
         } 
-            console.log("aaaaa");
             res.json(allDiets)
             
         } catch (error) {

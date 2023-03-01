@@ -88,7 +88,7 @@ router.get("/", async(req,res,next) =>{
           else return res.send(`The recipe with the title ${name} was not found`)
 
        }  
-       res.json("allRecipes")      
+       res.json(allRecipes)      
         
     } catch (error) {
         
